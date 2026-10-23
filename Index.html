@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+
+<!-- Declares the document language as English for browsers and accessibility tools. -->
+<html lang="en">
+
+<!-- HEAD: settings, fonts, and stylesheets. Nothing here appears as page content. -->
+<head>
+
+    <!-- Allows symbols such as hearts and accented letters to display correctly. -->
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+
+        content="width=device-width, initial-scale=1.0"
+
+    >
+
+    <meta
+        name="description"
+
+        content="Kaeli and Skylar's Christmas elopement announcement"
+
+    >
+
+    <!-- Text shown in the browser tab. Change this to rename the tab. -->
+    <title>Kaeli & Skylar | We Got Married</title>
+
+    <!-- Connects early to Google Fonts to help fonts load sooner. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Connects early to Google Fonts to help fonts load sooner. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Montserrat:wght@300;400;500;600&display=swap"
+
+        rel="stylesheet"
+
+    >
+
+    <!-- Loads your shared CSS file. Change style.css only if you rename that file. -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- BODY: everything visitors see on the page begins here. -->
+<body>
+
+    <!-- =========================
+
+         NAVIGATION
+
+    \========================== -->
+
+    <!-- Top navigation bar. CSS styles .navbar; links below jump to page sections. -->
+    <nav class="navbar">
+
+        <!-- Clicking the K ♡ S logo jumps back to the hero section (#home). -->
+        <a href="#home" class="nav-logo">
+
+            K <span>♡</span> S
+
+        </a>
+
+        <!-- Mobile menu button. JavaScript uses id="menuButton" to open/close the links. -->
+        <button
+
+            class="menu-button"
+
+            id="menuButton"
+
+            aria-label="Open navigation menu"
+
+        >
+
+            ☰
+
+        </button>
+
+        <!-- Menu links. Each #name must match the id on a section below. -->
+        <div class="nav-links" id="navLinks">
+
+            <a href="#home">Home</a>
+
+            <!-- This button scrolls to the announcement section; #announcement matches its id. -->
+            <a href="#announcement">Our News</a>
+
+            <a href="#story">Our Story</a>
+
+            <a href="#gallery">Photos</a>
+
+            <a href="#registry">Registry</a>
+
+        </div>
+
+    </nav>
+
+    <!-- =========================
+
+         HERO
+
+    \========================== -->
+
+    <!-- Large first screen with background photo; CSS .hero controls its appearance. -->
+    <header class="hero" id="home">
+
+        <!-- Adds a dark visual overlay so text stays readable over the photo. -->
+        <div class="hero-overlay"></div>
+
+        <!-- JavaScript can insert animated snowflakes here; aria-hidden hides decoration from screen readers. -->
+        <div class="snow-container" aria-hidden="true"></div>
+
+        <!-- Groups all text and the button on the landing section. -->
+        <div class="hero-content">
+
+            <!-- Small uppercase label above the main heading. -->
+            <p class="eyebrow">
+
+                A LITTLE CHRISTMAS SURPRISE
+
+            </p>
+
+            <!-- Decorative gold lines and symbol around the heading. -->
+            <div class="ornament-line">
+
+                <span></span>
+
+                ✦
+
+                <span></span>
+
+            </div>
+
+            <!-- Main page heading. The span allows the ampersand to be styled separately. -->
+            <h1>
+
+                Kaeli
+
+                <span>&</span>
+
+                Skylar
+
+            </h1>
+
+            <!-- Main announcement line; edit the words here. -->
+            <p class="announcement">
+
+                We Got Married!
+
+            </p>
+
+            <!-- Wedding date shown in the hero. Update when you want a more specific date. -->
+            <p class="wedding-date">
+
+                December 2026
+
+            </p>
+
+            <!-- This button scrolls to the announcement section; #announcement matches its id. -->
+            <a href="#announcement" class="button button-light">
+
+                See Our Story
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+
+         ANNOUNCEMENT
+
+    \========================== -->
+
+    <!-- Introduction below the hero. The shared .section class provides spacing. -->
+    <section class="announcement-section section" id="announcement">
+
+        <!-- Decorative leaf on the left; CSS positions it. -->
+        <div class="botanical botanical-left">
+
+            ❧
+
+        </div>
+
+        <!-- Matching decorative leaf on the right. -->
+        <div class="botanical botanical-right">
+
+            ❧
+
+        </div>
+
+        <!-- Small label above the section heading. -->
+        <p class="section-label">
+
+            OUR FAVORITE SECRET
+
+        </p>
+
+        <h2>
+
+            Some things are simply meant to be.
+            <!-- We couldn't wait forever. -->
+
+        </h2>
+
+        <!-- Thin gold divider styled in CSS. -->
+        <div class="gold-divider"></div>
+
+        <!-- Larger introductory paragraph for emphasis. -->
+        <p class="large-copy">
+
+            A love like this only comes once in a lifetime, 
+            and we didn't want to wait any longer.
+
+            <!-- This Christmas, we chose something simple, intimate,
+
+            and completely us. -->
+
+        </p>
+
+        <!-- Main explanatory announcement paragraph. <strong> makes selected words bold. -->
+        <p class="intro-text">
+
+            Some love stories take years to unfold. Ours simply fell into place. From the very beginning, 
+            loving each other felt effortless, like finding a piece of ourselves we never knew was missing.
+
+            In a short time, we've found a lifetime of love, laughter, understanding, and a kind of happiness 
+            neither of us knew was possible.
+
+            So this Christmas, we chose forever.
+
+            Just the two of us, a little Christmas magic, and the beginning of our favorite chapter yet.
+
+            <!-- Surrounded by love and filled with excitement for everything
+
+            ahead, we quietly began the next chapter of our lives together.
+
+            We're so happy to finally share the news: -->
+
+            <strong>we're married.</strong>
+
+        </p>
+
+        <!-- Sign-off line and names; the nested span gets special typography. -->
+        <p class="signature-line">
+
+            With all our love,
+
+            <span>Kaeli & Skylar</span>
+
+        </p>
+
+    </section>
+
+    <!-- =========================
+
+         OUR STORY
+
+    \========================== -->
+
+    <!-- Relationship timeline section. #story is the target of the Our Story nav link. -->
+    <section class="story section" id="story">
+
+        <!-- Small label above the section heading. -->
+        <p class="section-label">
+
+            THE ROAD THAT BROUGHT US HERE
+
+        </p>
+
+        <h2>
+
+            Our Story
+
+        </h2>
+
+        <!-- Short description before the timeline. -->
+        <p class="story-intro">
+
+            Two different places. Two separate lives. So many chances to cross paths — and one night that changed everything.
+
+        </p>
+
+        <!-- TWO PATHS: Three matching chapters, with photographs on each side. -->
+        <div class="two-paths">
+            <div class="path-column her-path">
+                <h3>Her Side</h3>
+                <article class="path-card">
+                    <!-- Replace images/kaeli-hometown.jpg with your own photo. -->
+                    <div class="path-photo"><img src="images/kaeli-hometown.jpg" alt="Kaeli in her hometown" loading="lazy" onerror="this.style.display='none'"><span class="photo-fallback">Add your photo</span></div>
+                    <div class="path-card-content"><span>WHERE IT ALL BEGAN</span><h4>From Piedmont, South Dakota</h4><p>Before our paths crossed, my story began near the Black Hills of South Dakota.</p></div>
+                </article>
+                <article class="path-card">
+                    <!-- Replace images/kaeli-college.jpg with your own photo. -->
+                    <div class="path-photo"><img src="images/kaeli-college-grad.jpeg" alt="Kaeli during college" loading="lazy" onerror="this.style.display='none'"><span class="photo-fallback">Add your photo</span></div>
+                    <div class="path-card-content"><span>OUR COLLEGE YEARS</span><h4>South Dakota Mines</h4><p>Started: 2019 · Degree: Computer Science · Graduated: May 4th, 2024 </p></div>
+                </article>
+                <article class="path-card">
+                    <!-- Replace images/kaeli-collins.jpg with your own photo. -->
+                    <div class="path-photo"><img src="images/kaeli-collins.PNG" alt="Kaeli in front of the Collins Aerospace sign" loading="lazy" onerror="this.style.display='none'"><span class="photo-fallback">Add your photo</span></div>
+                    <div class="path-card-content"><span>THE NEXT CHAPTER</span><h4>Hello, Collins Aerospace</h4><p>Started: June 10, 2024 · Role: Cyber Security Engineer · Cedar Rapids, Iowa</p></div>
+                </article>
+            </div>
+            <div class="path-column his-path">
+                <h3>His Side</h3>
+                <article class="path-card">
+                    <!-- Replace images/skylar-hometown.jpg with your own photo. -->
+                    <div class="path-photo"><img src="images/skylar-hometown.jpg" alt="Skylar in his hometown" loading="lazy" onerror="this.style.display='none'"><span class="photo-fallback">Add your photo</span></div>
+                    <div class="path-card-content"><span>WHERE IT ALL BEGAN</span><h4>From Westcliffe, Colorado</h4><p>Skylar’s story started in Westcliffe, long before either of us knew what was ahead.</p></div>
+                </article>
+                <article class="path-card">
+                    <!-- Replace images/skylar-college.jpg with your own photo. -->
+                    <div class="path-photo"><img src="images/skylar-mines.JPEG" alt="Skylar during college" loading="lazy" onerror="this.style.display='none'"><span class="photo-fallback">Add your photo</span></div>
+                    <div class="path-card-content"><span>OUR COLLEGE YEARS</span><h4>South Dakota Mines</h4><p>Started: 2018 · Degree: Electrical Engineer with a minor in Avionics and Systems · Graduated: May 4th, 2024</p></div>
+                </article>
+                <article class="path-card">
+                    <!-- Replace images/skylar-collins.jpg with your own photo. -->
+                    <div class="path-photo"><img src="images/skylar-collins.jpg" alt="Skylar in front of the Collins Aerospace sign" loading="lazy" onerror="this.style.display='none'"><span class="photo-fallback">Add your photo</span></div>
+                    <div class="path-card-content"><span>THE NEXT CHAPTER</span><h4>Hello, Collins Aerospace</h4><p>Started: [date] · Role: RF Hardware Engineer · Cedar Rapids, Iowa</p></div>
+                </article>
+            </div>
+        </div>
+        <!-- Shared coincidences, positioned between the two separate journeys. -->
+        <div class="almost-met">
+            <p class="almost-label">SO CLOSE, YET SO FAR</p>
+            <h3>Same School. Same Graduation. Still Strangers.</h3>
+            <p>We attended South Dakota Mines at the same time, shared <strong>[number]</strong> classes, and even graduated on the very same day — without ever meeting.</p>
+            <p class="almost-note">And somehow, our next chapter led us to the same company, too.</p>
+        </div>
+        <!-- FATE NOTE: A quiet pause after the near-misses, before the paths meet. -->
+        <aside class="fate-note" aria-label="Maybe it was always fate">
+            <p class="fate-note-label">ALL THE ALMOSTS</p>
+            <h3>Maybe It Was Always Fate.</h3>
+            <div class="fate-note-divider" aria-hidden="true"></div>
+            <p>Looking back, it’s almost impossible to believe how many times our paths could have crossed. We walked the same halls, sat in the same classrooms, celebrated the same milestones, and even found ourselves working for the same company.</p>
+            <p>For years, we were right in front of each other without ever knowing it. Through every almost and every missed hello, life was quietly bringing us closer.</p>
+            <p class="fate-note-ending">And then, one night, the timing was finally right. ♡</p>
+        </aside>
+
+        <!-- Curved lines visually join the two paths into one. -->
+        <div class="paths-merge" aria-hidden="true"><svg viewBox="0 0 400 90" preserveAspectRatio="none"><path d="M100 0 C100 55 200 35 200 90"/><path d="M300 0 C300 55 200 35 200 90"/></svg></div>
+        <div class="paths-meet"><span>THE NIGHT EVERYTHING CHANGED</span><h3>And Then, Our Paths Crossed</h3><p>Neither of us was much for going out. But on one ordinary night, we both decided to go to the same bar. After years of near misses, one unexpected evening changed everything.</p><strong>And just like that, there was us. ♡</strong></div>
+
+        <!-- Container for milestones; CSS draws the central gold line. -->
+        <div class="timeline">
+
+          <!-- STORY ITEM 1 -->
+
+            <!-- Milestone placed on the left on desktop; stacked on mobile. -->
+            <article class="timeline-event right">
+
+                <!-- Circular symbol sitting on the timeline line. -->
+                <div class="timeline-marker">
+
+                    ♡
+
+                </div>
+
+                <!-- White card holding a photo placeholder and story text. -->
+                <div class="timeline-card">
+
+                    <!-- Placeholder for a relationship photo. Replace with an <img> element when ready. --> 
+                    <div class="path-photo">
+                        <img src="images/skiing.JPG">
+                    </div>
+
+                    <!-- Small milestone label; this does not need to be an actual date. -->
+                    <p class="timeline-date">
+
+                        WHERE IT ALL BEGAN
+
+                    </p>
+
+                    <h3>
+
+                        Friends First
+
+                    </h3>
+
+                    <p>
+
+                        For a whole year, we were friends, and being around each other always felt easy. There was no pressure 
+                        or need to be anything other than ourselves. We built a friendship full of laughter, conversations, and 
+                        little moments that would eventually mean so much more.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- STORY ITEM 2 -->
+            <!-- Milestone placed on the left on desktop; stacked on mobile. -->
+            <article class="timeline-event left">
+
+                <!-- Circular symbol sitting on the timeline line. -->
+                <div class="timeline-marker">
+
+                    ♡
+
+                </div>
+
+                <!-- White card holding a photo placeholder and story text. -->
+                <div class="timeline-card">
+
+                    <!-- Placeholder for a relationship photo. Replace with an <img> element when ready. --> 
+                    <div class="path-photo">
+                        <img src="images/firstdate.PNG" style="object-position: center 20%;">
+                    </div>
+
+                    <!-- Small milestone label; this does not need to be an actual date. -->
+                    <p class="timeline-date">
+
+                        WHEN FRIENDSHIP BECAME MORE
+
+                    </p>
+
+                    <h3>
+
+                        Our First Date
+
+                    </h3>
+
+                    <p class="timeline-date">
+
+                        April 4th, 2026
+
+                    </p>
+
+                    <p>
+
+                        After a year of friendship, we finally took a chance on something more. What felt so natural as 
+                        friends began to feel different in the best way. We already knew how easy it was to be together; 
+                        now, we got to discover what it meant to fall in love.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- STORY ITEM 2 -->
+
+            <!-- Milestone placed on the right on desktop; stacked on mobile. -->
+            <article class="timeline-event right">
+
+                <!-- Circular symbol sitting on the timeline line. -->
+                <div class="timeline-marker">
+
+                    ✦
+
+                </div>
+
+                <!-- White card holding a photo placeholder and story text. -->
+                <div class="timeline-card">
+
+                    <!-- Placeholder for a relationship photo. Replace with an <img> element when ready. -->
+                    <div class="timeline-photo-placeholder">
+
+                        <span>Add First Date Photo</span>
+
+                    </div>
+
+                    <!-- Small milestone label; this does not need to be an actual date. -->
+                    <p class="timeline-date">
+
+                        OUR FIRST DATE
+
+                    </p>
+
+                    <h3>
+
+                        Blue Orchids & Slow Dancing
+
+                    </h3>
+
+                    <p>
+
+                        A fancy dinner at Cobble Hill,
+
+                        matching pasta dishes, blue orchids,
+
+                        sore feet, and slow dancing afterward.
+
+                        It was the kind of night we never wanted to end.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- STORY ITEM 3 -->
+
+            <!-- Milestone placed on the left on desktop; stacked on mobile. -->
+            <article class="timeline-event left">
+
+                <!-- Circular symbol sitting on the timeline line. -->
+                <div class="timeline-marker">
+
+                    ♥
+
+                </div>
+
+                <!-- White card holding a photo placeholder and story text. -->
+                <div class="timeline-card">
+
+                    <!-- Placeholder for a relationship photo. Replace with an <img> element when ready. -->
+                    <div class="timeline-photo-placeholder">
+
+                        <span>Add Favorite Photo</span>
+
+                    </div>
+
+                    <!-- Small milestone label; this does not need to be an actual date. -->
+                    <p class="timeline-date">
+
+                        SOMEWHERE ALONG THE WAY
+
+                    </p>
+
+                    <h3>
+
+                        When Forever Felt Easy
+
+                    </h3>
+
+                    <p>
+
+                        Somewhere between the adventures,
+
+                        the quiet evenings, the hard days,
+
+                        and the completely ordinary moments,
+
+                        forever stopped feeling like an idea
+
+                        and started feeling like us.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- STORY ITEM 4 -->
+
+            <!-- Milestone placed on the right on desktop; stacked on mobile. -->
+            <article class="timeline-event right">
+
+                <!-- Circular symbol sitting on the timeline line. -->
+                <div class="timeline-marker">
+
+                    💍
+
+                </div>
+
+                <!-- White card holding a photo placeholder and story text. -->
+                <div class="timeline-card">
+
+                    <!-- Placeholder for a relationship photo. Replace with an <img> element when ready. -->
+                    <div class="timeline-photo-placeholder">
+
+                        <span>Add Wedding Photo</span>
+
+                    </div>
+
+                    <!-- Small milestone label; this does not need to be an actual date. -->
+                    <p class="timeline-date">
+
+                        DECEMBER 2026
+
+                    </p>
+
+                    <h3>
+
+                        We Chose Forever
+
+                    </h3>
+
+                    <p>
+
+                        So this Christmas, we made it official.
+
+                        Quietly, happily, and completely in love,
+
+                        we began our forever together.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- Closing marker at the bottom of the relationship timeline. -->
+            <div class="timeline-ending">
+
+                <!-- Decorative house symbol for the next chapter. -->
+                <div class="timeline-ending-icon">
+
+                    🏡
+
+                </div>
+
+                <p>
+
+                    And now our next adventure begins.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+
+         PHOTO GALLERY
+
+    \========================== -->
+
+    <!-- Photo gallery section. #gallery matches the Photos navigation link. -->
+    <section class="gallery section" id="gallery">
+
+        <!-- Small label above the section heading. -->
+        <p class="section-label">
+
+            SOME OF OUR FAVORITE MOMENTS
+
+        </p>
+
+        <h2>
+
+            A Little Piece of Us
+
+        </h2>
+
+        <!-- Short caption introducing the photos. -->
+        <p class="gallery-intro">
+
+            The big moments, the little moments,
+
+            and everything in between.
+
+        </p>
+
+        <!-- CSS grid that arranges all gallery photos. -->
+        <div class="gallery-grid">
+
+            <!-- Tall photo placeholder that spans two grid rows on desktop. -->
+            <div class="gallery-photo gallery-tall">
+
+                <span>Photo</span>
+
+            </div>
+
+            <!-- Standard photo placeholder. Replace the span with an image when ready. -->
+            <div class="gallery-photo">
+
+                <span>Photo</span>
+
+            </div>
+
+            <!-- Standard photo placeholder. Replace the span with an image when ready. -->
+            <div class="gallery-photo">
+
+                <span>Photo</span>
+
+            </div>
+
+            <!-- Wide photo placeholder that spans two grid columns. -->
+            <div class="gallery-photo gallery-wide">
+
+                <span>Photo</span>
+
+            </div>
+
+            <!-- Standard photo placeholder. Replace the span with an image when ready. -->
+            <div class="gallery-photo">
+
+                <span>Photo</span>
+
+            </div>
+
+            <!-- Standard photo placeholder. Replace the span with an image when ready. -->
+            <div class="gallery-photo">
+
+                <span>Photo</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+
+         REGISTRY
+
+    \========================== -->
+
+    <!-- Gift section on the homepage; it links to two separate HTML pages. -->
+    <section class="registry section" id="registry">
+
+        <!-- Centers and limits the width of registry content. -->
+        <div class="registry-inner">
+
+            <!-- Small label above the section heading. -->
+            <p class="section-label">
+
+                FOR OUR NEXT CHAPTER
+
+            </p>
+
+            <h2>
+
+                Celebrating From Near & Far
+
+            </h2>
+
+            <!-- Thin gold divider styled in CSS. -->
+            <div class="gold-divider"></div>
+
+            <!-- Optional-gifts message; change this wording whenever you like. -->
+            <p class="registry-intro">
+
+                Your love and well wishes are more than enough.
+
+                For those who have asked, or would like to celebrate
+
+                with a gift, we've put together a few things for our
+
+                new life together.
+
+            </p>
+
+            <!-- Two-column grid of house-fund and registry cards on desktop. -->
+            <div class="registry-grid">
+
+                <!-- HOME FUND -->
+
+                <!-- Highlighted house-fund card; featured adds a gold border. -->
+                <article class="registry-card featured">
+
+                    <!-- Decorative icon at the top of each gift card. -->
+                    <div class="registry-icon">
+
+                        🏡
+
+                    </div>
+
+                    <!-- Small uppercase label inside a card. -->
+                    <p class="card-label">
+
+                        OUR BIGGEST ADVENTURE YET
+
+                    </p>
+
+                    <h3>
+
+                        Our First Home
+
+                    </h3>
+
+                    <p>
+
+                        We're saving toward a place to call our own.
+
+                        If you'd like to contribute toward our future
+
+                        home, we'd be incredibly grateful.
+
+                    </p>
+
+                    <a
+
+                    <!-- Links to the separate house-fund.html file in the same folder. -->
+                    href="house-fund.html"
+
+                    class="button button-green"
+
+                >
+
+                    Contribute to Our Home
+
+                </a>
+
+                </article>
+
+                <!-- REGISTRY -->
+
+                <!-- Regular registry card. -->
+                <article class="registry-card">
+
+                    <!-- Decorative icon at the top of each gift card. -->
+                    <div class="registry-icon">
+
+                        ♡
+
+                    </div>
+
+                    <!-- Small uppercase label inside a card. -->
+                    <p class="card-label">
+
+                        FOR MARRIED LIFE
+
+                    </p>
+
+                    <h3>
+
+                        Our Registry
+
+                    </h3>
+
+                    <p>
+
+                        We've gathered a few things we would love
+
+                        to have as we build our home and begin
+
+                        married life together.
+
+                    </p>
+
+                    <a
+
+                    <!-- Links to the separate registry.html file in the same folder. -->
+                    href="registry.html"
+
+                    class="button button-burgundy"
+
+                >
+
+                    View Our Registry
+
+                </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+
+         FINAL SECTION
+
+    \========================== -->
+
+    <!-- Final Christmas greeting section. -->
+    <section class="ending">
+
+        <!-- Centers and limits the width of the ending message. -->
+        <div class="ending-content">
+
+            <!-- Small introductory line in the final section. -->
+            <p class="ending-small">
+
+                MERRY CHRISTMAS FROM
+
+            </p>
+
+            <h2>
+
+                The Newlyweds
+
+            </h2>
+
+            <!-- Your names beneath the ending heading. -->
+            <p class="ending-names">
+
+                Kaeli & Skylar
+
+            </p>
+
+            <!-- Decorative symbols between the names and closing message. -->
+            <div class="ending-stars">
+
+                ✦   ♡   ✦
+
+            </div>
+
+            <!-- Final sentimental message. -->
+            <p class="ending-message">
+
+                Here's to love, laughter,
+
+                and a lifetime of Christmases together.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+
+         FOOTER
+
+    \========================== -->
+
+    <!-- Footer at the bottom of the website. -->
+    <footer>
+
+        <p>
+
+            Made with ♡ for our favorite adventure.
+
+        </p>
+
+    </footer>
+
+    <!-- Loads JavaScript for the menu, snow, and any other interactions defined in script.js. -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
